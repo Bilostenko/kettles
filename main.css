@@ -1,1 +1,100 @@
-/*# sourceMappingURL=main.css.map */
+/* fonts */
+/* font-size */
+/* color */
+img {
+  display: block;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  font-weight: bold;
+}
+
+header {
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.navigation {
+  margin: 0 auto;
+  height: 70px;
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation .nav__logo {
+  padding: 0 5% 0 5%;
+}
+.navigation .navigation__wrapper {
+  display: flex;
+  gap: 6.5vw;
+}
+.navigation .navbra__icon-wrapper {
+  display: flex;
+  padding: 0 5% 0 5%;
+  gap: 25px;
+}
+
+.kettle {
+  background-color: #95CFD5;
+  display: flex;
+  justify-content: center;
+  height: 100vw;
+}
+.kettle .kettle__wrapper {
+  display: flex;
+  margin-top: 56px;
+  gap: 146px;
+}
+.kettle .kettle__info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 72px;
+}
+.kettle .kettle__title {
+  font-weight: 700;
+  font-size: 150px;
+  color: #FFFFFF;
+}
+.kettle .kettle__text {
+  font-weight: 500;
+  margin-top: 8px;
+  margin-bottom: 36px;
+  color: #FFFFFF;
+}
+.kettle .kettle__btns {
+  display: flex;
+  gap: 46px;
+  margin-top: 36px;
+  margin-bottom: 64px;
+}
+.kettle .kettle__btn {
+  color: black;
+  padding: 14px 92px;
+  background-color: #FFFFFF;
+}
+.kettle .kettle__icons {
+  display: flex;
+  gap: 16px;
+}
+.kettle .kettle__btn-play {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.kettle .kettle__icon {
+  padding: 6px 13px;
+  border: 2px solid #FFFFFF;
+  border-radius: 15px;
+}/*# sourceMappingURL=main.css.map */

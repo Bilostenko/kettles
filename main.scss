@@ -1,0 +1,116 @@
+@import"./variables.scss";
+@import "./extends.scss";
+
+img {
+  display: block;
+}
+
+body {
+  font-family: $main;
+  font-size: $normal;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+span {
+  font-weight: bold;
+}
+
+header {
+  width: 100%;
+  background-color: $color-w;
+
+}
+
+.navigation {
+  margin: 0 auto;
+  height: 70px;
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+  .nav__logo {
+    padding: 0 5% 0 5%;
+  }
+
+  .navigation__wrapper {
+    display: flex;
+    gap: 6.5vw;
+  }
+
+  .navbra__icon-wrapper {
+    display: flex;
+    padding: 0 5% 0 5%;
+    gap: 25px;
+  }
+}
+
+.kettle {
+  background-color: $color-blue;
+  display: flex;
+  justify-content: center;
+  height: 100vw;
+
+  .kettle__wrapper {
+    display: flex;
+    margin-top: 56px;
+    gap: 146px;
+  }
+
+  .kettle__info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 72px;
+  }
+
+  .kettle__title {
+    font-weight: 700;
+    font-size: 150px;
+    color: $color-w;
+  }
+
+  .kettle__text {
+    font-weight: 500;
+    margin-top: 8px;
+    margin-bottom: 36px;
+    color: $color-w;
+  }
+
+  .kettle__btns {
+    display: flex;
+    gap: 46px;
+    margin-top: 36px;
+    margin-bottom: 64px;
+  }
+
+  .kettle__btn {
+    color: black;
+    padding: 14px 92px;
+    background-color: $color-b;
+    color: $color-w;
+  }
+
+  .kettle__icons {
+    display: flex;
+    gap: 16px;
+  }
+  .kettle__btn-play{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    color: ;
+  }
+
+  .kettle__icon {
+    padding: 6px 13px;
+    border: 2px solid $color-w;
+    border-radius: 15px;
+  }
+}
