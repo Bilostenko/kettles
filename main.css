@@ -90,6 +90,12 @@ header {
   display: flex;
   gap: 16px;
 }
+.kettle .kettle__icons button {
+  background: none;
+  padding: 6px 13px;
+  border: 2px solid #FFFFFF;
+  border-radius: 15px;
+}
 .kettle .kettle__btn-play {
   display: flex;
   gap: 8px;
@@ -98,8 +104,6 @@ header {
   color: black;
   font-weight: 500;
 }
-.kettle .kettle__icon {
-  padding: 6px 13px;
-  border: 2px solid #FFFFFF;
-  border-radius: 15px;
+.kettle .active {
+  background-color: white !important;
 }/*# sourceMappingURL=main.css.map */

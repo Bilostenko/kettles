@@ -101,7 +101,16 @@ header {
   .kettle__icons {
     display: flex;
     gap: 16px;
+
+    button{
+      background: none;
+      padding: 6px 13px;
+      border: 2px solid $color-w;
+      border-radius: 15px;
+    }
   }
+
+  
 
   .kettle__btn-play {
     display: flex;
@@ -112,9 +121,7 @@ header {
     font-weight: 500;
   }
 
-  .kettle__icon {
-    padding: 6px 13px;
-    border: 2px solid $color-w;
-    border-radius: 15px;
+  .active{
+    background-color: white !important;
   }
 }
