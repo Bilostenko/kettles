@@ -15,7 +15,8 @@ blueKettle.onclick = () => {
   blueKettle.classList.add("active") 
   bigKettle.src = "./img/kettle-bg/blue-kettle.png";
 
-  option1.checked = true;
+  document.querySelector('input').checked = false
+  option1.checked = true
 }
 
 redKettle.onclick = () => {
@@ -23,6 +24,10 @@ redKettle.onclick = () => {
   document.querySelector(".active").classList.remove("active")
   redKettle.classList.add("active")   
   bigKettle.src = "./img/kettle-bg/red-kettle.png";
+
+  document.querySelector('input').checked = false
+  option2.checked = true
+ 
 }
 
 pinkKettle.onclick = () =>{
@@ -30,6 +35,9 @@ pinkKettle.onclick = () =>{
   document.querySelector(".active").classList.remove("active")
   pinkKettle.classList.add("active")  
   bigKettle.src = "./img/kettle-bg/pink-kettle.png";
+
+  document.querySelector('input').checked = false
+  option3.checked = true
 }
 
 beigeKettle.onclick = () => {
@@ -37,5 +45,8 @@ beigeKettle.onclick = () => {
   document.querySelector(".active").classList.remove("active")
   beigeKettle.classList.add("active")  
   bigKettle.src = "./img/kettle-bg/beige-kettle.png";
+
+  document.querySelector('input').checked = false
+  option4.checked = true
 }
 

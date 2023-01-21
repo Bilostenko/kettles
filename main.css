@@ -26,7 +26,7 @@ header {
 
 .navigation {
   margin: 0 auto;
-  height: 70px;
+  height: 66px;
   max-width: 1440px;
   display: flex;
   align-items: center;
@@ -49,7 +49,7 @@ header {
   background-color: #95CFD5;
   display: flex;
   justify-content: center;
-  height: 100vw;
+  height: 93vh;
 }
 .kettle .kettle__wrapper {
   display: flex;
@@ -106,4 +106,45 @@ header {
 }
 .kettle .active {
   background-color: white !important;
+}
+
+.radio__btns-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.radio__btns-wrapper li {
+  list-style-type: none;
+}
+.radio__btns-wrapper input[type=radio]::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid rgb(255, 255, 255);
+}
+.radio__btns-wrapper input[type=radio] {
+  position: relative;
+  height: 22px;
+  width: 22px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+}
+.radio__btns-wrapper input[type=radio]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  transform: translate(-50%, -50%);
+  visibility: visible;
 }/*# sourceMappingURL=main.css.map */

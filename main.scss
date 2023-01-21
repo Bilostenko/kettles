@@ -28,7 +28,7 @@ header {
 
 .navigation {
   margin: 0 auto;
-  height: 70px;
+  height: 66px;
   max-width: 1440px;
   display: flex;
   align-items: center;
@@ -55,7 +55,7 @@ header {
   background-color: $color-blue;
   display: flex;
   justify-content: center;
-  height: 100vw;
+  height: 93vh;
 
   .kettle__wrapper {
     display: flex;
@@ -102,7 +102,7 @@ header {
     display: flex;
     gap: 16px;
 
-    button{
+    button {
       background: none;
       padding: 6px 13px;
       border: 2px solid $color-w;
@@ -110,7 +110,7 @@ header {
     }
   }
 
-  
+
 
   .kettle__btn-play {
     display: flex;
@@ -121,7 +121,50 @@ header {
     font-weight: 500;
   }
 
-  .active{
+  .active {
     background-color: white !important;
+  }
+}
+
+.radio__btns-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  li {
+    list-style-type: none;
+  }
+
+  input[type=radio]::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgb(255, 255, 255);
+  }
+
+  input[type='radio'] {
+    position: relative;
+    height: 22px;
+    width: 22px;
+    appearance: none;
+    outline: none;
+  }
+
+  input[type='radio']:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    transform: translate(-50%, -50%);
+    visibility: visible;
   }
 }
