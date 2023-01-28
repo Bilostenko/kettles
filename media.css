@@ -3,7 +3,16 @@
   .navigation__wrapper {
     font-size: 14px;
   }
+
   .navbra__icon-wrapper {
     gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+
+  .kettle {
+    display: flex;
+ /*    flex-direction: column; */
   }
 }
