@@ -1,0 +1,9 @@
+@media screen and (max-width: 850px) {
+
+  .navigation__wrapper {
+    font-size: 14px;
+  }
+  .navbra__icon-wrapper {
+    gap: 10px;
+  }
+}
