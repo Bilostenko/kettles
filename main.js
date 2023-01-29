@@ -76,12 +76,13 @@ option4.onclick = () => {
   bigKettle.src = "./img/kettle-bg/beige-kettle.png";
 }
 
-const showMenu = document.querySelectorAll('.navigation__wrapper')
+const showMenu = document.querySelectorAll('.navigation_item')
 
-showMenu.addEventListener('click', showUp)
+for (let i = 0; i < showMenu.length; ++i) {
+  showMenu[i].addEventListener('click', showUp)
+}
 
-for(let i = 0; i < showMenu.length; i++){
-  function showUp(){
-    showMenu[i].style.display = 'grid'
-  }
+function showUp() {
+  const menuGrid = document.querySelector(".menu-grid")
+  menuGrid.classList.toggle("menu-grid-togle");
 }
