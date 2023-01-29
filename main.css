@@ -152,4 +152,24 @@ header {
   background-color: rgb(255, 255, 255);
   transform: translate(-50%, -50%);
   visibility: visible;
+}
+
+.menu-grid {
+  max-width: 1072px;
+  background-color: red;
+  display: grid;
+  justify-items: center;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "menu__item menu__item menu__item menu__item" "menu__item menu__item menu__item menu__item" "menu__item menu__item menu__item menu__item";
+}
+.menu-grid :nth-child(2) {
+  margin-top: 30px;
+}
+.menu-grid li {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 50px;
 }/*# sourceMappingURL=main.css.map */
