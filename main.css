@@ -9,6 +9,8 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  position: relative;
+  z-index: 0;
 }
 
 a {
@@ -40,6 +42,12 @@ header {
   gap: 6.5vw;
   padding-right: 10px;
   margin: 0 auto;
+}
+.navigation .navigation__wrapper li {
+  padding-bottom: 10px;
+}
+.navigation .navigation__wrapper li:hover {
+  text-decoration: underline;
 }
 .navigation .navbra__icon-wrapper {
   display: flex;
@@ -155,14 +163,17 @@ header {
 }
 
 .menu-grid {
+  position: absolute;
+  z-index: 1;
+  border: 1px solid black;
+  background-color: white;
   max-width: 1072px;
-  background-color: red;
-  display: grid;
+  display: none;
   justify-items: center;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: 0px 0px;
+  gap: 0px 20px;
   grid-template-areas: "menu__item menu__item menu__item menu__item" "menu__item menu__item menu__item menu__item" "menu__item menu__item menu__item menu__item";
 }
 .menu-grid :nth-child(2) {
@@ -171,5 +182,11 @@ header {
 .menu-grid li {
   font-weight: 400;
   font-size: 24px;
-  line-height: 50px;
+  line-height: 20px;
+  padding-top: 20px;
+  cursor: pointer;
+}
+.menu-grid li:hover {
+  text-decoration: underline;
+  transition: all 2s;
 }/*# sourceMappingURL=main.css.map */
