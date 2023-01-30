@@ -162,15 +162,21 @@ header {
   visibility: visible;
 }
 
+.menu-grid-togle {
+  display: none !important;
+}
+
 .menu-grid {
   position: absolute;
+  top: 31%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
   border: 1px solid black;
   background-color: white;
-  max-width: 1072px;
-  display: none;
+  width: 70vw;
+  display: grid;
   justify-items: center;
-  margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px 20px;
@@ -178,6 +184,10 @@ header {
 }
 .menu-grid :nth-child(2) {
   margin-top: 30px;
+}
+.menu-grid .menu__list {
+  align-self: center;
+  justify-self: center;
 }
 .menu-grid li {
   font-weight: 400;
