@@ -86,3 +86,7 @@ function showUp() {
   const menuGrid = document.querySelector(".menu-grid")
   menuGrid.classList.toggle("menu-grid-togle");
 }
+
+window.onload = () =>{
+  setTimeout(()=>{alert('temporary is not working correctly')},5000)
+}
