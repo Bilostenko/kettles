@@ -5,6 +5,7 @@ let blueKettle = document.querySelector("#blue")
 let redKettle = document.querySelector("#red")
 let pinkKettle = document.querySelector("#pink")
 let beigeKettle = document.querySelector("#beige")
+
 /* radio buttons*/
 let option1 = document.querySelector("#option1")
 let option2 = document.querySelector("#option2")
